@@ -113,7 +113,7 @@ nav .right a span{
     width: 400px;
   }
 
-            /* Skills Section */
+          /* Section - 2: Skills */
   
 #skills{
     margin-bottom: 20px;
@@ -155,7 +155,7 @@ nav .right a span{
     border-radius: 5px;
 }
 
-    /* Project Section */
+   /* Section - 3: Projects */
 
     #Projects h2{
         margin-bottom: 20px;
@@ -240,7 +240,7 @@ nav .right a span{
 
 
 
-    /* Contact Section*/
+  /* Section - 4: Contact */
 
 #contact{
     padding:0 50px;
@@ -363,5 +363,6 @@ nav .right a span{
   nav .right a{
       font-size: 22px;
   }
+
 
 }
