@@ -1,0 +1,367 @@
+
+/* Creating Variables for further use*/
+
+:root{
+    --text-color:#1a1c20;
+    --link-color:#4a76ee;
+    --background-color: #eeeff1;
+}
+
+    /* Removing Default Setting */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+    /* Setting Font and background color of the body */
+
+body{
+    font-family:'Poppins',sans-serif;
+    background-color: var(--background-color);
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+        /* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 50px;
+}
+
+nav .left a{
+    color:var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color:var(--text-color);
+    margin: 0px 10px;
+}
+
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5x;
+}
+
+
+/* Section - 1: Me-Section */
+   .Me-section{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        margin: 50px 0;
+        align-items: center;
+    }
+    
+
+    .Me-section .text{
+        flex:5;
+    }
+
+    .Me-section .Photo{
+        
+        flex:2;
+        display: flex;
+        justify-content: right;
+    }
+
+    .Me-section .text h2{
+        font-size: 45px;
+    }
+
+    .Me-section .text .links{
+        margin-top:10px ;
+    }
+
+    .Me-section .links a{
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid var(--link-color);
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: .3s;
+    }
+   
+     .Me-section .links a:hover{
+        color: var(--text-color);
+        border:1px solid var(--text-color);
+     }
+   
+     .Photo img{ 
+    border-radius: 50%;
+    width: 400px;
+  }
+
+            /* Skills Section */
+  
+#skills{
+    margin-bottom: 20px;
+}
+
+  #skills h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#skills .text p{
+    padding: 0px 50px;    
+}
+
+.cells{
+    margin-bottom:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px
+
+}
+.cell{
+    
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 200px;
+    
+    img{
+        border-radius: 2px;
+        width: 40px;
+        height:40px;
+    }
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+    /* Project Section */
+
+    #Projects h2{
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .project-container{
+        background-color:#E8E8E8 ;
+        border: 1px solid #1a1c20;
+        border-radius: 16px;
+        display: grid;
+        gap: 50px;
+        box-sizing: content-box;
+        padding: 50px;
+    }
+
+    .horizontal{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+
+       .horizontal .project{
+        display: flex;
+        margin-top: 20px;
+        border: 1px solid #d3d3d3;
+        background-color:#C8C8C8 ;
+        border-radius: 12px;
+        overflow: hidden;
+        gap: 30px;
+        width: 600px;
+        height: 260px;
+    }
+
+    .horizontal .project img{
+         height: 260px;
+    }
+
+    .horizontal .project .card{
+        padding: 10px;
+    }
+
+    .horizontal2{
+        display: flex;
+        justify-self: center;
+    }
+
+    .horizontal2 .project{
+        display: flex;
+        border: 1px solid #d3d3d3;
+        background-color:#C8C8C8;
+        border-radius:12px ;
+        overflow: hidden;
+        width: 1000px;
+        gap: 30px;
+    }
+    
+   .horizontal2 .project img{
+    height: 300px;
+}
+
+.horizontal2 .card{
+    padding:40px; 
+   }
+
+   .card span{
+    background-color: #4a76ee;
+    border-radius: 5px;
+    border: 1px solid silvesr;
+    color: gold;
+    padding: 5px;
+
+   }
+
+    .card p{
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+    /* Contact Section*/
+
+#contact{
+    padding:0 50px;
+    margin: 100px;
+}
+
+#contact h2{
+     font-size: 35px;
+}
+
+#contact .group{
+   display: flex;
+   gap: 50px;
+}
+
+#contact .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .group .text{
+    flex:3;
+    margin-top: 20px;
+}
+
+#contact .group form input,#contact .group form textarea{
+        font-family: 'poppins',sans-serif;
+        border: 2px solid blue;
+        background-color: transparent;
+        padding: 10px;
+        margin-bottom: 15px;
+}
+
+#contact .group form button{
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: var(--link-color);
+    height: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#contact .group form button:hover{
+    filter:brightness(0.9);
+}
+
+        /* Changing the Layout as the screen reselution changes */
+
+@media(max-width:1100px){
+
+    .horizontal{
+        display: grid;
+    }
+}
+
+@media(max-width:1050px){
+    .horizontal2 .project{
+        display: grid;
+        width: 450px;
+
+    }
+}
+
+@media(max-width:850px){
+
+    /* Me-Section */
+
+  .Me-section .text h2{
+      font-size: 35px;
+  }
+}
+
+@media(max-width:700px){
+  .Me-section{
+      flex-direction: column-reverse;
+
+      nav{
+          padding: 0 20px ;
+      }
+
+      .Photo img{
+          width: 300px;
+      }
+  }
+    #contact .group {
+    flex-direction: column;
+    }
+}
+
+@media(max-width:660px){
+
+    .horizontal .project{
+        display: grid;
+        width: 260px;
+        height: 640px;
+
+        
+    }
+}
+
+@media(max-width:600px){
+
+    /* NAVBAR */
+
+  nav{
+      padding: 0 20px
+  }
+  
+  nav .right a span{
+     display: none; 
+  }
+
+  nav .right a:last-child{
+       color:var(--text-color);
+      background-color: transparent;
+  }
+
+  nav .right a{
+      font-size: 22px;
+  }
+
+}
